@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import EmailForm from './EmailForm';
 
 const ContactMe = () => {
       const [isClicked, setIsClicked] = useState(false);
@@ -12,11 +13,8 @@ const ContactMe = () => {
         <>
           <div onClick={clickHandler}>Contact me</div>
           <div>
-            {isClicked && (
-              
-                <form>Form to submit email will be here</form>
-        
-              
+            {isClicked && (             
+                <EmailForm />             
             )}
           </div>
         </>
